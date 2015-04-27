@@ -1,37 +1,22 @@
-<?xml version = "1.0" encoding = "utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns = "http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html>
 <head>
-<!--  <link rel = "stylesheet" type = "text/css" href = "formValidSheet.css" />\
--->
-  <link rel = "stylesheet" type = "text/css" href = "teamActivity0.css" />
   <title>Team Activity 0</title>
+  <link rel = "stylesheet" type = "text/css" href = "teamActivity0.css"/>
   <script src="teamActivity0.js">
   </script>
 </head>
 
 <body>
-  <label>  Text to Append: </label>
-  <input type="text" id="to_append" placeholder="Banana">
-  </input>
+  <label>Text to Append:</label>
+  <input type="text" id="to_append" placeholder="Banana"></input>
   <br />
-  <label> Color:
-    <input type="text" id="color" placeholder="#CCFFCC">
-    </input>
-    <br />
-  </label>
-  <br />
-  <br />
-  <button type="button" id="togVis" onclick="togVis()" > Toggle Visibility
-  </button>
-  <button type="button" id="update" onclick="update()"> Update
-  </button>
-  <br />
-  <br />
-  <div id="results"> default
-  </div>
-
+  <label>Color:</label>
+    <input type="text" id="color" placeholder="#CCFFCC"></input>
+  <br/><br/><br/>
+  <button type="button" onclick="togVis()">Toggle Visibility</button>
+  <button type="button" onclick="update()">Update</button>
+  <br/><br/>
+  <div id="results"> default</div>
 </body>
 </html>
