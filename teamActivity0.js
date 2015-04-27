@@ -1,6 +1,6 @@
 function togVis()
 {
-   var results = document.getElementById("results");
+   var results = document.getElementById("display");
    if (results.style.visibility == "hidden")
       results.style.visibility = "visible";
    else
@@ -16,9 +16,11 @@ function handleUpdateClick(){
 		updateColor(color);		
 	}
 }
+
 function appendText(text){
 	document.getElementById("display").innerHTML = text;
 }
+
 function updateColor(color){
 	document.getElementById("display").style.backgroundColor= color;
 }
