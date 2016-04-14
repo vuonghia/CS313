@@ -31,7 +31,7 @@
   </div>
 </nav>
 
-<div class="jumbotron" style="background-image: url(jasonville4blue.jpg)">
+<div class="jumbotron" style="background-image: url(/assets/img/jasonville4blue.jpg)">
 <header>
   <div class="container-fluid">
 <h1 style="font-family: 'Shadows Into Light', serif">Welcome to JASONVILLE</h1>
@@ -45,13 +45,13 @@
 	<div id='responseSite'>
 	<form id="Site" onsubmit="voting_results.php" method="post">
     <div class="row">
-	
+
 		<!-- Survey about My Site -->
         <div class="col-md-3">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        <span class="glyphicon glyphicon-arrow-right"></span>What do you think of my site? 
+                        <span class="glyphicon glyphicon-arrow-right"></span>What do you think of my site?
                     </h3>
                 </div>
 				<!-- Survey Form about My Site -->
@@ -109,7 +109,7 @@
                 </div>
             </div>
         </div>
-		
+
 		<!-- Survey about My Project -->
         <div class="col-md-3">
             <div class="panel panel-primary">
@@ -236,7 +236,7 @@
 
             </div>
         </div>
-		
+
 		<!-- Survey about Pokemon -->
         <div class="col-md-3">
             <div class="panel panel-primary">
@@ -313,10 +313,10 @@
 	<script>
 				$(document).ready(function(){
 					$('#Site').submit(function(){
-					 
+
 						// show that something is loading
 						$('#responseSite').html("<b>Loading response...</b>");
-						 
+
 						/*
 						 * 'post_receiver.php' - where you will pass the form data
 						 * $(this).serialize() - to easily read form data
@@ -324,25 +324,25 @@
 						 */
 						$.ajax({
 							type: 'POST',
-							url: 'voting_results.php', 
+							url: 'voting_results.php',
 							data: $(this).serialize()
 						})
 						.done(function(data){
-							 
+
 							// show the response
 							$('#responseSite').html(data);
-							 
+
 						})
 						.fail(function() {
-						 
+
 							// just in case posting your form failed
 							alert( "Posting failed." );
-							 
+
 						});
-				 
+
 						// to prevent refreshing the whole page page
 						return false;
-				 
+
 					});
 				});
 	</script>
@@ -350,7 +350,7 @@
 
 <footer>
 	<br/><br/><hr/>
-	<div style="text-align:center; 
+	<div style="text-align:center;
 				text-shadow: 5px 5px 5px #888888;
 				font-weight: bold">
 		Posted by: Jason Vuong<br/>

@@ -16,9 +16,9 @@
   {
       header('Location: customer_information.php');
   }
-?>  
+?>
 
-  
+
 </head>
 
 <body>
@@ -33,7 +33,7 @@
         <li><a href="aboutme.html"><b>About Me</b></a></li>
         <li><a href="assignments.html"><b>My Assignments</b></a></li>
       </ul>
-	  
+
 	  <ul class="nav navbar-nav navbar-right">
         <li><a href="registration_form.html"><b>Sign Up</b></a></li>
         <li><a href="sign_in.php"><b>Sign In</b></a></li>
@@ -42,7 +42,7 @@
   </div>
 </nav>
 
-<div class="jumbotron" style="background-image: url(mario_wall.jpg)">
+<div class="jumbotron" style="background-image: url(/assets/img/mario_wall.jpg)">
 	<header>
 		<div class="container-fluid"><br/><br/><br/><br/><br/><br/><br/><br/></div>
 	</header>
@@ -61,7 +61,7 @@
 				<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="4" required>
 			</div>
 
-			
+
 			<hr>
 			<div class="row">
 			<div class="col-xs-12 col-md-6"><a href="registration_form.html" class="btn btn-primary btn-block btn-lg" tabindex="7">Sign Up</a></div>

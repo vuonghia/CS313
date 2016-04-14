@@ -29,7 +29,7 @@
   </div>
 </nav>
 
-<div class="jumbotron" style="background-image: url(jasonville2.jpg)">
+<div class="jumbotron" style="background-image: url(/assets/img/jasonville2.jpg)">
 <header>
   <div class="container-fluid">
 <h1 style="font-family: 'Shadows Into Light', serif">Welcome to JASONVILLE</h1>
@@ -46,22 +46,22 @@
 	  <div class="col-md-6" style="font-family: 'Dosis', serif">
 	  <div style="text-align:center;background-color:#FA773F;
 		          padding: 20px 20px 20px 20px;
-				  font-family: 'Dosis', serif" class="img-rounded"> 
+				  font-family: 'Dosis', serif" class="img-rounded">
 		<h3><b>My Survey</b></h3>
 			Welcome <?php echo $_POST["name"]; ?><br>
 			Your email address is: <?php echo $_POST["email"]; ?>
 		</div>
 	  </div>
-	  
+
 	  <div class="col-md-3">
 	  </div>
 	</div>
-	
+
 </div>
 
 <footer>
 	<br/><br/><hr/>
-	<div style="text-align:center; 
+	<div style="text-align:center;
 				text-shadow: 5px 5px 5px #888888;
 				font-weight: bold">
 		Posted by: Jason Vuong<br/>

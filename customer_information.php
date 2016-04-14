@@ -44,8 +44,8 @@
 	  <ul class="nav navbar-nav navbar-right">
 	    <li><a class="glyphicon glyphicon-shopping-cart" href="shopping_cart.php"><b><?php echo ' Cart';?></b></a></li>
         <li><a class="glyphicon glyphicon-log-in" href="registration_form.html"><b><?php echo ' Sign Up';?></b></a></li>
-				<?php 
-					
+				<?php
+
 					if (isset($_SESSION[username]))
 					{
 						echo '<li><a class="glyphicon glyphicon-user" href="sign_in.php"><b>';
@@ -60,15 +60,15 @@
       </ul>
     </div>
   </div>
-</nav>		
+</nav>
 
-<div class="jumbotron" style="background-image: url(mario_wall.jpg)">
+<div class="jumbotron" style="background-image: url(/assets/img/mario_wall.jpg)">
 	<header>
 		<div class="container-fluid"><br/><br/><br/><br/><br/><br/><br/><br/></div>
 	</header>
 </div>
 
-<div class="container">		
+<div class="container">
         <div class="col-md-3">
 		 <div class="panel panel-primary">
                 <div class="panel-heading">
@@ -78,16 +78,16 @@
                 </div>
        <div class="col-md-1"></div>
 		<div class="panel-body">
-		    <button type="button" onclick="location.href='assignment2.html'" 
+		    <button type="button" onclick="location.href='assignment2.html'"
 			        class="btn btn-primary btn-block">Change Contact Info</button>
-		    <button type="button" onclick="location.href='assignment2.html'" 
+		    <button type="button" onclick="location.href='assignment2.html'"
 			        class="btn btn-primary btn-block">Change Password</button>
-		    <button type="button" onclick="location.href='assignment2.html'" 
+		    <button type="button" onclick="location.href='assignment2.html'"
 			        class="btn btn-primary btn-block">Change Addresses</button>
-		    <button type="button" onclick="location.href='sign_out.php'" 
+		    <button type="button" onclick="location.href='sign_out.php'"
 			        class="btn btn-warning btn-block">Sign Out</button>
 		</div>
-		</div>		
+		</div>
 		</div>
         <div class="col-md-8">
 				<div class="panel panel-primary">
@@ -95,18 +95,18 @@
                     <h3 class="panel-title">
                         <span class="glyphicon glyphicon-user"></span><?php echo " Hello, " . $firstname . "!"?>
                     </h3>
-                </div>	
+                </div>
             <div class="panel-body">
                   <ul class="list-group">
                   <li class="list-group-item">
                     <label>
 						Username:
 						<?php echo " " . $username; ?>
-                    </label>	
+                    </label>
                   </li>
                   <li class="list-group-item">
                     <label>
-						Full Name: 
+						Full Name:
 						<?php echo " " . $firstname . " " . $lastname; ?>
                     </label>
                   </li>
@@ -120,7 +120,7 @@
                     <label>
 						Phone #:
 						<?php echo " " . $phone ?>
-                    </label>	
+                    </label>
                   </li>
                   </ul>
                   </div>

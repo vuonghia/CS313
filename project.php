@@ -34,8 +34,8 @@
 	  <ul class="nav navbar-nav navbar-right">
 	  <li><a class="glyphicon glyphicon-shopping-cart" href="shopping_cart.php"><b><?php echo ' Cart';?></b></a></li>
 	  <li><a class="glyphicon glyphicon-log-in" href="registration_form.html"><b><?php echo ' Sign Up';?></b></a></li>
-				<?php 
-					
+				<?php
+
 					if ($firstname != NULL)
 					{
 						echo '<li><a class="glyphicon glyphicon-user" href="sign_in.php"><b>';
@@ -50,7 +50,7 @@
       </ul>
     </div>
   </div>
-</nav>	
+</nav>
 
 <div class="jumbotron"
      style="background-image: url(80088339.jpg);height:700px;width:100%">
@@ -68,18 +68,18 @@
 </header>
 </div>
 <?php
-try 
+try
 {
 				// foreach ($db->query("SELECT * FROM customer") as $row)
 				// {
-				// echo "Hello " . $row['firstname'] 
+				// echo "Hello " . $row['firstname']
 				// . "<br/>Full name: " . $row['firstname'] . " " . $row['lastname']
 				// . "<br/>Email Address: " . $row['email']
 				// . "<br/>Password: ********br/>";
 				// }
 	require ("load_db.php");
 	$db = loadDatabase();
-				
+
 	$names = $db->query('SELECT name FROM product');
 	$nameArray = array();
 	$prices = $db->query('SELECT price FROM product');
@@ -91,26 +91,26 @@ try
 
 	foreach($names as $row)
 	{
-	  array_push($nameArray, $row['name']); 
+	  array_push($nameArray, $row['name']);
 	}
 	foreach($prices as $row)
 	{
-	  array_push($priceArray, $row['price']); 
+	  array_push($priceArray, $row['price']);
 	}
 	foreach($reviews as $row)
 	{
-	  array_push($reviewArray, $row['review']); 
+	  array_push($reviewArray, $row['review']);
 	}
 	foreach($ids as $row)
 	{
-	  array_push($idArray, $row['photoid']); 
+	  array_push($idArray, $row['photoid']);
 	}
-	
+
 }
 catch (PDOException $ex)
 {
 	print "Error!: " . $e->getMessage() . "<br/>";
-}	
+}
 ?>
 
 <style>
@@ -131,7 +131,7 @@ catch (PDOException $ex)
     display: inline-block;
     color: #999;
   }
-  
+
 a:link {
     color: #FFFFFF;
 }
@@ -149,14 +149,14 @@ a:hover {
 	for ($i = 0; $i < sizeof($nameArray); $i++)
 	{
 	echo '<div class="col-lg-6 col-sm-6 col-xs-12">
-			<a class="thumbnail with-caption" href="item_information.php"> 
-				<img src="item' . $idArray[$i] . '.jpg">
+			<a class="thumbnail with-caption" href="item_information.php">
+				<img src="/assets/img/item' . $idArray[$i] . '.jpg">
 				<h4>' . $nameArray[$i] . '</h4>
 				<h6>$' . $priceArray[$i] . '</h6>
 			</a>';
 	if ($idArray[$i] % 2 == 0 && $idArray[$i] > 1)
 		echo '<br/><br/>';
-			
+
 	echo '</div>';
 	}
 ?>
@@ -167,113 +167,113 @@ a:hover {
 <div class="container" >
   <div class="row" style="margin-left:auto;margin-right:auto;width:80%">
     <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">	 
-            <img src="tnt_royal_retro.jpg">
+        <a class="thumbnail with-caption" href="item_information.php">
+            <img src="/assets/img/tnt_royal_retro.jpg">
 			<h4>TNT Royal Retro</h4>
 			<h6>$18,000</h6>
         </a>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-            <img src="air_square.jpg">
+            <img src="/assets/img/air_square.jpg">
 			<h4>Air Square</h4>
 			<h6>$130</h6>
         </a><br/><br/>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-            <img src="ghost_drone.jpg">
+            <img src="/assets/img/ghost_drone.jpg">
 			<h4>Ghost Drone</h4>
 			<h6>$700</h6>
         </a>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="uriana_iphone_glass_holder.jpg">
+             <img src="/assets/img/uriana_iphone_glass_holder.jpg">
 			<h4>Uriana iPhone Glass Holder</h4>
 			<h6>$120</h6>
         </a><br/><br/>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="LZR_980.jpg">
+             <img src="/assets/img/LZR_980.jpg">
 			<h4>LZR 980 Headphone</h4>
 			<h6>$300</h6>
         </a>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="IC200B_PICO_Projector.jpg">
+             <img src="/assets/img/IC200B_PICO_Projector.jpg">
 			<h4>IC200B PICO Projector</h4>
 			<h6>$300</h6>
         </a><br/><br/>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="shirt8.jpg">
+             <img src="/assets/img/shirt8.jpg">
 			<h4>Ah! Green Shirt</h4>
 			<h6>$20</h6>
         </a>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="shirt9.jpg">
+             <img src="/assets/img/shirt9.jpg">
 			<h4>Loading Sarcasm Shirt</h4>
 			<h6>$20</h6>
         </a><br/><br/>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="Smart_Plane.jpg">
+             <img src="/assets/img/Smart_Plane.jpg">
 			<h4>Smart Plane</h4>
 			<h6>$50</h6>
         </a><br/><br/>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="Consol_Solar_Jar.jpg">
+             <img src="/assets/img/Consol_Solar_Jar.jpg">
 			<h4>Consol Solar Jar</h4>
 			<h6>$25</h6>
         </a><br/><br/>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="LED_Reflective_Belt.jpg">
+             <img src="/assets/img/LED_Reflective_Belt.jpg">
 			<h4>LED Reflective Belt</h4>
 			<h6>$25</h6>
         </a><br/><br/>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="Hover_Bar_iPad.jpg">
+             <img src="/assets/img/Hover_Bar_iPad.jpg">
 			<h4>Hover Bar for iPad</h4>
 			<h6>$70</h6>
         </a><br/><br/>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="Rosewood_Journal.jpg">
+             <img src="/assets/img/Rosewood_Journal.jpg">
 			<h4>Rosewood_Journal</h4>
 			<h6>$20</h6>
         </a><br/><br/>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="Glass_Touch_Smart_Keyboard.jpg">
+             <img src="/assets/img/Glass_Touch_Smart_Keyboard.jpg">
 			<h4>Glass Touch Smart Keyboard</h4>
 			<h6>$150</h6>
         </a><br/><br/>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="Lamborghini_Veneno.jpg">
+             <img src="/assets/img/Lamborghini_Veneno.jpg">
 			<h4>Lamborghini Veneno Figure</h4>
-			<h6>$100</h6>			 
+			<h6>$100</h6>
         </a><br/><br/>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
-             <img src="Bugatti_EB_Veyron.jpg">
+             <img src="/assets/img/Bugatti_EB_Veyron.jpg">
 			<h4>Bugatti EB Veyron Figure</h4>
 			<h6>$100</h6>
 	</a><br/><br/>

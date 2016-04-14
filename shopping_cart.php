@@ -44,8 +44,8 @@
 	  <ul class="nav navbar-nav navbar-right">
 	    <li><a class="glyphicon glyphicon-shopping-cart" href="shopping_cart.php"><b><?php echo ' Cart';?></b></a></li>
         <li><a class="glyphicon glyphicon-log-in" href="registration_form.html"><b><?php echo ' Sign Up';?></b></a></li>
-				<?php 
-					
+				<?php
+
 					if (isset($_SESSION[username]))
 					{
 						echo '<li><a class="glyphicon glyphicon-user" href="sign_in.php"><b>';
@@ -60,9 +60,9 @@
       </ul>
     </div>
   </div>
-</nav>		
+</nav>
 
-<div class="jumbotron" style="background-image: url(mario_wall.jpg)">
+<div class="jumbotron" style="background-image: url(/assets/img/mario_wall.jpg)">
 	<header>
 		<div class="container-fluid"><br/><br/><br/><br/><br/><br/><br/><br/></div>
 	</header>
@@ -75,19 +75,19 @@
                     <h3 class="panel-title">
                         <span class="glyphicon glyphicon-shopping-cart"></span><?php echo " Item"?>
                     </h3>
-                </div>	
+                </div>
 				<div class="panel-body">
 
 					        <div class="col-md-3">
-								<img src="Consol_Solar_Jar.jpg" style="width:120px;height:120px">
+								<img src="/assets/img/Consol_Solar_Jar.jpg" style="width:120px;height:120px">
 							</div>
 							<div class="col-md-9">
 								<h4>Consol Solar Jar</h4>
 								<h5>$25</h5>
 								<hr/>
-								<p>Light comes in many forms, and it certainly doesn't have to be 
-									electric - that's something Consol Solar Jars proves with each 
-									of its innovative, solar-powered mason jar lamps. Ready to charge 
+								<p>Light comes in many forms, and it certainly doesn't have to be
+									electric - that's something Consol Solar Jars proves with each
+									of its innovative, solar-powered mason jar lamps. Ready to charge
 									during the day and cast a pleasant glow in the evening ...</p>
 								<hr/>
 
@@ -117,15 +117,15 @@
 					<div class="col-md-6"></div>
 					<div class="col-md-6">
 						<div class="pull-right"><hr/>Total: $60</div>
-					</div>	
+					</div>
 
 					<div class="col-md-12">
 						<br/>
-						<button type="button" onclick="location.href='assignment2.html'" 
+						<button type="button" onclick="location.href='assignment2.html'"
 								class="btn btn-success btn-block">Check Out</button>
 					</div>
 				</div>
-			</div>		
+			</div>
 		</div>
 </div>
 </body>
