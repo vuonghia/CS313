@@ -24,11 +24,12 @@
     <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
-        <div class="navbar-header">
+        <!-- <div class="navbar-header">
           <a class="navbar-brand active" href="project.php"><b>Jason's Store</b></a>
-        </div>
+        </div> -->
         <div>
           <ul class="nav navbar-nav">
+            <li><a href="project.php"><b>Geek Store</b></a></li>
             <li><a href="aboutme.html"><b>About Me</b></a></li>
             <li><a href="index.html"><b>Home Page</b></a></li>
           </ul>
@@ -52,8 +53,8 @@
     </nav>
 
     <!-- HEADER -->
-    <div class="jumbotron ">
-      <header class="header-background">
+    <div class="jumbotron header-background">
+      <header>
       	<div class="container-fluid">
       		<br/><br/>
       		<h1><br/>Welcome to <br/>Jason's Store</h1>
