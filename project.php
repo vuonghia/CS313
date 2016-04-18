@@ -53,7 +53,7 @@
 </nav>
 
 <div class="jumbotron"
-     style="background-image: url(80088339.jpg);height:700px;width:100%">
+     style="background-image: url(assets/img/80088339.jpg);height:700px;width:100%">
 <header>
 	<div class="container-fluid">
 		<br/><br/>
@@ -116,7 +116,7 @@ catch (PDOException $ex)
 <style>
   .thumbnail.with-caption {
     display: inline-block;
-	background-image: url("bar.jpg");
+	background-image: url("assets/img/bar.jpg");
   }
   .thumbnail.with-caption p {
 //    margin: 0;
