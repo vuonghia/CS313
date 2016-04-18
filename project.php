@@ -9,13 +9,13 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
     <!-- PRIJECT STYLESHEET -->
-    <link href="/assets/css/project.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/assets/css/project.css" rel="stylesheet" type="text/css"/>
 
     <!-- GOOGLE FONTS -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light">
+    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Crete+Round">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dosis">
-    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext'>
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext'> -->
   </head>
 
   <body>
