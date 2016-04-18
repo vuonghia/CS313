@@ -3,7 +3,7 @@ body {
 }
 
 .header_background {
-  background-image: url(assets/img/80088339.jpg) fixed;
+  background-image: url(assets/img/header_background.jpg) fixed;
   height:100%;
   width:100%;
 }
