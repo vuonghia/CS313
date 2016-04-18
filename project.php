@@ -164,7 +164,7 @@ a:hover {
 </div>
 
 <!-- Grid View of Items -->
-<div class="container" >
+<!-- <div class="container" >
   <div class="row" style="margin-left:auto;margin-right:auto;width:80%">
     <div class="col-lg-6 col-sm-6 col-xs-12">
         <a class="thumbnail with-caption" href="item_information.php">
@@ -279,6 +279,7 @@ a:hover {
 	</a><br/><br/>
     </div>
   </div>
-</div>
+</div> -->
+
 </body>
 </html>
