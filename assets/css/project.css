@@ -1,0 +1,38 @@
+.thumbnail.with-caption {
+  display: inline-block;
+background-image: url("assets/img/bar.jpg");
+}
+.thumbnail.with-caption p {
+//    margin: 0;
+  padding-top: 0.5em;
+}
+.thumbnail.with-caption small:before {
+  content: '\2014 \00A0';
+}
+.thumbnail.with-caption small {
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+  color: #999;
+}
+
+a:link {
+  color: #FFFFFF;
+}
+a:visited {
+  color: #FFFFFF;
+}
+a:hover {
+  color: #3D6BFF;
+}
+
+
+h4 {
+  font-family: 'Lato';
+  font-size: 15px;
+}
+
+h6 {
+  font-family: 'Lato';
+  font-size: 12px;
+}

@@ -4,16 +4,22 @@
 <title>Welcome to Jason's Store</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Crete+Round">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dosis">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- PRIJECT STYLESHEET -->
+  <link href="/assets/css/project.css" rel="stylesheet" type="text/css" media="all" />
+
+  <!-- GOOGLE FONTS -->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Crete+Round">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dosis">
+  <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext'>
 </head>
 
 <body>
-<div style="background-image: url(277997.jpg)">
+<div style="background-image: url(assets/img/277997.jpg)">
 
 <!-- Navigation Bar -->
 <?php
@@ -113,36 +119,7 @@ catch (PDOException $ex)
 }
 ?>
 
-<style>
-  .thumbnail.with-caption {
-    display: inline-block;
-	background-image: url("assets/img/bar.jpg");
-  }
-  .thumbnail.with-caption p {
-//    margin: 0;
-    padding-top: 0.5em;
-  }
-  .thumbnail.with-caption small:before {
-    content: '\2014 \00A0';
-  }
-  .thumbnail.with-caption small {
-    width: 100%;
-    text-align: right;
-    display: inline-block;
-    color: #999;
-  }
-
-a:link {
-    color: #FFFFFF;
-}
-a:visited {
-    color: #FFFFFF;
-}
-a:hover {
-    color: #3D6BFF;
-}
-</style>
-
+<!-- Grid View of Items -->
 <div class="container" >
 	<div class="row" style="margin-left:auto;margin-right:auto;width:80%">
 <?php
@@ -150,7 +127,7 @@ a:hover {
 	{
 	echo '<div class="col-lg-6 col-sm-6 col-xs-12">
 			<a class="thumbnail with-caption" href="item_information.php">
-				<img src="/assets/img/item' . $idArray[$i] . '.jpg">
+				<img src="/assets/img/items/item' . $idArray[$i] . '.jpg">
 				<h4>' . $nameArray[$i] . '</h4>
 				<h6>$' . $priceArray[$i] . '</h6>
 			</a>';
@@ -162,124 +139,6 @@ a:hover {
 ?>
 	</div>
 </div>
-
-<!-- Grid View of Items -->
-<!-- <div class="container" >
-  <div class="row" style="margin-left:auto;margin-right:auto;width:80%">
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-            <img src="/assets/img/tnt_royal_retro.jpg">
-			<h4>TNT Royal Retro</h4>
-			<h6>$18,000</h6>
-        </a>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-            <img src="/assets/img/air_square.jpg">
-			<h4>Air Square</h4>
-			<h6>$130</h6>
-        </a><br/><br/>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-            <img src="/assets/img/ghost_drone.jpg">
-			<h4>Ghost Drone</h4>
-			<h6>$700</h6>
-        </a>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/uriana_iphone_glass_holder.jpg">
-			<h4>Uriana iPhone Glass Holder</h4>
-			<h6>$120</h6>
-        </a><br/><br/>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/LZR_980.jpg">
-			<h4>LZR 980 Headphone</h4>
-			<h6>$300</h6>
-        </a>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/IC200B_PICO_Projector.jpg">
-			<h4>IC200B PICO Projector</h4>
-			<h6>$300</h6>
-        </a><br/><br/>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/shirt8.jpg">
-			<h4>Ah! Green Shirt</h4>
-			<h6>$20</h6>
-        </a>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/shirt9.jpg">
-			<h4>Loading Sarcasm Shirt</h4>
-			<h6>$20</h6>
-        </a><br/><br/>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/Smart_Plane.jpg">
-			<h4>Smart Plane</h4>
-			<h6>$50</h6>
-        </a><br/><br/>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/Consol_Solar_Jar.jpg">
-			<h4>Consol Solar Jar</h4>
-			<h6>$25</h6>
-        </a><br/><br/>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/LED_Reflective_Belt.jpg">
-			<h4>LED Reflective Belt</h4>
-			<h6>$25</h6>
-        </a><br/><br/>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/Hover_Bar_iPad.jpg">
-			<h4>Hover Bar for iPad</h4>
-			<h6>$70</h6>
-        </a><br/><br/>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/Rosewood_Journal.jpg">
-			<h4>Rosewood_Journal</h4>
-			<h6>$20</h6>
-        </a><br/><br/>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/Glass_Touch_Smart_Keyboard.jpg">
-			<h4>Glass Touch Smart Keyboard</h4>
-			<h6>$150</h6>
-        </a><br/><br/>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/Lamborghini_Veneno.jpg">
-			<h4>Lamborghini Veneno Figure</h4>
-			<h6>$100</h6>
-        </a><br/><br/>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a class="thumbnail with-caption" href="item_information.php">
-             <img src="/assets/img/Bugatti_EB_Veyron.jpg">
-			<h4>Bugatti EB Veyron Figure</h4>
-			<h6>$100</h6>
-	</a><br/><br/>
-    </div>
-  </div>
-</div> -->
 
 </body>
 </html>
