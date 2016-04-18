@@ -4,11 +4,10 @@
     <title>Welcome to Jason's Store</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
+    <!-- BOOTSTRAP CORE CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- PRIJECT STYLESHEET -->
     <link href="/assets/css/project.css" rel="stylesheet" type="text/css"/>
-
     <!-- GOOGLE FONTS -->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Crete+Round">
@@ -114,9 +113,9 @@
     	</div>
     </div>
 
-  <!-- LOAD BOOTSTRAP JAVASCRIPT CODE -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!-- BOOTSTRAP CORE JAVASCRIPT -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
 
   </body>
 </html>

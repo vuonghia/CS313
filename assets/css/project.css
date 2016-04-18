@@ -1,16 +1,16 @@
 body {
-  background: url("assets/img/project_background.jpg");
+  background: url("../img/project_background.jpg");
 }
 
 .header-background {
-  background: url("assets/img/header_background.jpg") fixed;
+  background: url("../img/header_background.jpg") fixed;
   /*height:100%;*/
   /*width:100%;*/
 }
 
 .thumbnail.with-caption {
   display: inline-block;
-  background-image: url("assets/img/item_box_background.jpg");
+  background-image: url("../img/item_box_background.jpg");
 }
 .thumbnail.with-caption p {
   padding-top: 0.5em;
