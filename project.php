@@ -55,7 +55,7 @@
     </nav>
 
     <!-- HEADER -->
-    <div class="jumbotron header_background">
+    <div class="jumbotron header-background">
       <header>
       	<div class="container-fluid">
       		<br/><br/>
