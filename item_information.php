@@ -70,7 +70,7 @@
 
 <div class="container" style="margin-left:auto;margin-right:auto">
         <div class="col-md-6">
-			<img src="/assets/img/Consol_Solar_Jar.jpg" 
+			<img src="assets/img/items/item18.jpg" 
 			     style="outline:#337AB7 solid 1.5px;border:5px solid #FFFFFF;
 				        display:block;margin-left:auto;margin-right:auto">
 			<br/>

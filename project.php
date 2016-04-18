@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- BOOTSTRAP CORE CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- BOOTSTRAP CORE JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <!-- PRIJECT STYLESHEET -->
     <link href="/assets/css/project.css" rel="stylesheet" type="text/css"/>
     <!-- GOOGLE FONTS -->
@@ -24,12 +27,11 @@
     <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
-        <!-- <div class="navbar-header">
-          <a class="navbar-brand active" href="project.php"><b>Jason's Store</b></a>
-        </div> -->
+        <div class="navbar-header">
+          <a class="navbar-brand active" href="#">Geek Store</a>
+        </div>
         <div>
           <ul class="nav navbar-nav">
-            <li><a href="project.php"><b>Geek Store</b></a></li>
             <li><a href="aboutme.html"><b>About Me</b></a></li>
             <li><a href="index.html"><b>Home Page</b></a></li>
           </ul>
@@ -113,10 +115,5 @@
         ?>
     	</div>
     </div>
-
-  <!-- BOOTSTRAP CORE JAVASCRIPT -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-
   </body>
 </html>
