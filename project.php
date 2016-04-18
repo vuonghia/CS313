@@ -55,8 +55,8 @@
     </nav>
 
     <!-- HEADER -->
-    <div class="jumbotron header-background">
-      <header>
+    <div class="jumbotron ">
+      <header class="header-background">
       	<div class="container-fluid">
       		<br/><br/>
       		<h1><br/>Welcome to <br/>Jason's Store</h1>

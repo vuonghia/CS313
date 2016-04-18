@@ -1,19 +1,18 @@
 body {
-  background-image: url(assets/img/project_background.jpg);
+  background-image: url("assets/img/project_background.jpg");
 }
 
 .header-background {
-  background-image: url(assets/img/header_background.jpg) fixed;
+  background-image: url("assets/img/header_background.jpg") fixed;
   /*height:100%;*/
   /*width:100%;*/
 }
 
 .thumbnail.with-caption {
   display: inline-block;
-background-image: url("assets/img/bar.jpg");
+  background-image: url("assets/img/item_box_background.jpg");
 }
 .thumbnail.with-caption p {
-//    margin: 0;
   padding-top: 0.5em;
 }
 .thumbnail.with-caption small:before {
