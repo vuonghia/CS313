@@ -59,9 +59,9 @@
       <header>
       	<div class="container-fluid">
       		<br/><br/>
-      		<h1 style="font-family:'Shadows Into Light' serif;color:white"><br/>Welcome to <br/>Jason's Store</h1>
+      		<h1><br/>Welcome to <br/>Jason's Store</h1>
       		<br/><br/>
-      		<h3 style="font-family:'Shadows Into Light',serif;color:white">
+      		<h3>
       			&nbsp&nbsp&nbspNifty Gadgets for Tech Addicts<br/>
       			&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBest Geek Toys on The Web<br/>
       			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCoolest Geek Apparel on The Web
