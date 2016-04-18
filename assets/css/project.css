@@ -1,3 +1,13 @@
+body {
+  background-image: url(assets/img/project_background.jpg);
+}
+
+.header_background {
+  background-image: url(assets/img/80088339.jpg) fixed;
+  height:100%;
+  width:100%;
+}
+
 .thumbnail.with-caption {
   display: inline-block;
 background-image: url("assets/img/bar.jpg");
