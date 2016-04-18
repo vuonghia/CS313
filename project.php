@@ -5,17 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
     <!-- PRIJECT STYLESHEET -->
     <link href="/assets/css/project.css" rel="stylesheet" type="text/css"/>
 
     <!-- GOOGLE FONTS -->
-    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Crete+Round">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dosis">
-    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext'> -->
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext'>
   </head>
 
   <body>
@@ -115,5 +113,10 @@
         ?>
     	</div>
     </div>
+
+  <!-- LOAD BOOTSTRAP JAVASCRIPT CODE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
   </body>
 </html>

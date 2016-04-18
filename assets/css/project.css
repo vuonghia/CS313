@@ -1,9 +1,9 @@
 body {
-  background-image: url("assets/img/project_background.jpg");
+  background: url("assets/img/project_background.jpg");
 }
 
 .header-background {
-  background-image: url("assets/img/header_background.jpg") fixed;
+  background: url("assets/img/header_background.jpg") fixed;
   /*height:100%;*/
   /*width:100%;*/
 }
