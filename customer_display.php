@@ -19,13 +19,11 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html"><b>Jasonville</b></a>
+      <a class="navbar-brand" href="project.php"><b>Geek Store</b></a>
     </div>
     <div>
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html"><b>Home</b></a></li>
-        <li><a href="aboutme.html"><b>About Me</b></a></li>
-        <li><a href="assignments.html"><b>My Assignments</b></a></li>
       </ul>
     </div>
   </div>

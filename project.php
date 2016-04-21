@@ -32,8 +32,7 @@
         </div>
         <div>
           <ul class="nav navbar-nav">
-            <li><a href="aboutme.html"><b>About Me</b></a></li>
-            <li><a href="index.html"><b>Home Page</b></a></li>
+            <li><a href="index.html"><b>Home</b></a></li>
           </ul>
       	  <ul class="nav navbar-nav navbar-right">
       	    <li><a class="glyphicon glyphicon-shopping-cart" href="shopping_cart.php"><b><?php echo ' Cart';?></b></a></li>

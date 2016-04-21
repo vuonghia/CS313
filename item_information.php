@@ -34,12 +34,11 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="project.php"><b>Jason's Store</b></a>
+      <a class="navbar-brand" href="project.php"><b>Geek Store</b></a>
     </div>
     <div>
       <ul class="nav navbar-nav">
-        <li><a href="aboutme.html"><b>About Me</b></a></li>
-        <li><a href="assignments.html"><b>My Assignments</b></a></li>
+        <li><a href="index.html"><b>Home</b></a></li>
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
 	    <li><a class="glyphicon glyphicon-shopping-cart" href="shopping_cart.php"><b><?php echo ' Cart';?></b></a></li>
@@ -70,7 +69,7 @@
 
 <div class="container" style="margin-left:auto;margin-right:auto">
         <div class="col-md-6">
-			<img src="assets/img/items/item18.jpg" 
+			<img src="assets/img/items/item18.jpg"
 			     style="outline:#337AB7 solid 1.5px;border:5px solid #FFFFFF;
 				        display:block;margin-left:auto;margin-right:auto">
 			<br/>
