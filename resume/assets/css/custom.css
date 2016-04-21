@@ -299,6 +299,30 @@ section h3 {
 	width: 100px;
 }
 
+#experience {
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#experience .carousel-caption-logo {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#experience .expFS {
+	background: #85B807;
+	background-repeat: repeat-x;
+}
+
+#experience .expBYUI {
+	background: #056CB6;
+}
+
+#experience .expSAC {
+	background: #D32F2E;
+}
+
 #project-features {
 	text-align: center;
 }
