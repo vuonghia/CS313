@@ -43,8 +43,8 @@
           </div> <!-- navbar header -->
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li class="active"><a href="#"><b>Home</b></a></li>
+              <li><a href="contact.html"><b>Contact</b></a></li>
             </ul> <!-- nav -->
           </div> <!-- navbar collapse -->
         </div>
@@ -80,7 +80,7 @@
     <div class="container">
       <div class="section-header">
         <img src="./assets/img/byui.png" height="250" width="250">
-        <h2>EDUCATION</h2>
+        <h2>Education</h2>
       </div> <!-- section-header -->
 
         <p class="lead">Brigham Young University &mdash; Idaho is an awesome school which trains your academic skills as well as develops your spiritually
@@ -103,7 +103,7 @@
   <section id="course-features">
     <div class="container">
       <div class="section-header">
-        <img src="./assets/img/icon-rocket.png" alt="Rocket" height="200" width="200">
+        <img class="my-skill-logo" src="./assets/img/icon-rocket.png" alt="Rocket" height="200" width="200">
         <h2>My Skills</h2>
       </div> <!-- section-header -->
       <div class="row">
@@ -153,7 +153,7 @@
                     <img class="carousel-caption-logo" src="./assets/img/fs-logo.png" alt="fs-logo">
                     <h2>My Experience &commat;</h2>
                     <h1>FamilySearch</h1>
-                    <p>Maintained &amp; developed an web-based app &mdash; Family-Tree (Angular, Express, &amp; Node.js)</p>
+                    <p>Maintained &amp; developed Family-Tree (Angular, Express, &amp; Node.js)</p>
                     <p>Experienced Agile Development Methodology</p>
                     <p>Wrote automated tests for Family-Tree ( Protractor) &amp; unit test for Family-Tree-Lite (Karma &amp; Mocha)</p>
                   </div>
@@ -206,19 +206,25 @@
 
       <div class="row">
         <div class="col-sm-4">
-          <img src="./assets/img/icon-design.png" alt="Design" height="150" width="150">
+          <a href="http://javawebapp1-cs313vuonghia.rhcloud.com/appstore.html">
+            <img class="project-logo" src="./assets/img/icon-design.png" alt="Design" height="150" width="150">
+          </a>
           <h3>Collab Code</h3>
           <p>is an Java web-app allows programmers code &amp; discuss online.</p>
           <a href="http://javawebapp1-cs313vuonghia.rhcloud.com/appstore.html"><p class="blink">>>> Link to App <<<</p></a>
         </div> <!-- col -->
         <div class="col-sm-4">
-          <img src="./assets/img/techshop-icon.png" alt="Code" height="150" width="150">
+          <a href="http://www.vuonghia.com/project.php">
+            <img class="project-logo" src="./assets/img/techshop-icon.png" alt="Code" height="150" width="150">
+          </a>
           <h3>Tech Shop</h3>
           <p>is a demo of a website selling high-end tech items written in html5/css3, php, &amp; mySQL.</p>
           <a href="http://www.vuonghia.com/project.php"><p class="blink">>>> Link to App <<<</p></a>
         </div> <!-- col -->
         <div class="col-sm-4">
-          <img src="./assets/img/bites-counter.png" alt="CMS" height="150" width="150">
+          <a href="https://drive.google.com/uc?export=download&id=0Bxt0QLwChzNXS2ZoVUhaY2U3Mnc">
+            <img class="project-logo" src="./assets/img/bites-counter.png" alt="CMS" height="150" width="150">
+          </a>
           <h3>Bites Counter</h3>
           <p>is an android app which aim to help people to loose weight by keeping track of their bites in a day.</p>
           <a href="https://drive.google.com/uc?export=download&id=0Bxt0QLwChzNXS2ZoVUhaY2U3Mnc"><p class="blink">>>> Link to App <<<</p></a>
@@ -232,8 +238,8 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-offset-3">
-          <h2>Wanna be friend with <strong>ME</strong>?</h2>
-          <p><a href="contact.html" class="btn btn-lg btn-block btn-success">Yes, sign me up!</a></p>
+          <h2>Thinking about recruiting <strong>ME</strong>?</h2>
+          <p><a href="contact.html" class="btn btn-lg btn-block btn-success">Contact Me HERE!</a></p>
         </div> <!-- col -->
       </div> <!-- row -->
     </div> <!-- container -->
@@ -249,7 +255,6 @@
           <nav>
             <ul class="list-unstyled list-inline">
               <li><a href="">Home</a></li>
-              <li><a href="">Blog</a></li>
               <li><a href="">Contact</a></li>
             </ul>
           </nav>
@@ -260,37 +265,6 @@
 
     </div> <!-- container -->
   </footer> <!-- END FOOTER -->
-
-  <!-- MODAL -->
-  <div class="modal fade" id="myModal">
-     <div class="modal-dialog">
-       <div class="modal-content">
-         <div class="modal-header">
-           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i> Subscribe to our mailing list</h4>
-         </div> <!-- modal-header -->
-         <div class="modal-body">
-           <p>Simply enter your name and email! As a thank you for joining us, we're going to give you one of our best-selling courses, <em> for free! </em></p>
-
-           <form class="form-inline" role="form">
-             <div class="form-group">
-               <label class="sr-only" for="subscribe-name"> Your first name</label>
-               <input type="text" class="form-control" id="subscribe-name" placeholder="Your first name">
-             </div> <!-- form-group -->
-             <div class="form-group">
-               <label class="sr-only" for="subscribe-email"> and your email</label>
-               <input type="text" class="form-control" id="subscribe-email" placeholder="and your email">
-             </div> <!-- form-group -->
-
-             <input type="submit" class="btn btn-danger" value="Subscribe!">
-           </form> <!-- form -->
-           <hr>
-
-           <p><small>By providing your email you consent to receiving occasional promotional emails &amp; newsletters. <br> No Spam. Just good stuff. We respect your privacy &amp; you may unsubscribe at any time.</small></p>
-        </div> <!-- modal-body -->
-      </div>
-    </div> <!-- modal-dialog -->
-  </div> <!-- END MODAL -->
 
   <!-- BOOTSTRAP CORE JAVASCRIPT -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

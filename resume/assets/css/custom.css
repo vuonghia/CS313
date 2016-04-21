@@ -162,6 +162,25 @@ blockquote:before {
 	padding-top: 20px;
 }
 
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+
+#hero .hero-social .badge:hover{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 1s ease-in-out forwards infinite;
+    animation: swinging 1s ease-in-out forwards infinite;
+}
+
 #hero .hero-text {
 	margin-top: 30px;
 }
@@ -299,6 +318,23 @@ section h3 {
 	width: 100px;
 }
 
+#course-features .my-skill-logo:hover {
+	-webkit-animation:spin 1s linear infinite;
+	-moz-animation:spin 1s linear infinite;
+	animation:spin 1s linear infinite;
+}
+
+
+#course-features .skill:hover {
+	-webkit-animation:spin 1s linear infinite;
+	-moz-animation:spin 1s linear infinite;
+	animation:spin 1s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 #experience {
 	text-align: center;
 	color: #FFFFFF;
@@ -325,6 +361,14 @@ section h3 {
 
 #project-features {
 	text-align: center;
+}
+
+#project-features .project-logo {
+	transition: all .3s ease-in-out;
+}
+
+#project-features .project-logo:hover {
+	transform: scale(1.4);
 }
 
 #featurette {
