@@ -47,7 +47,8 @@
   }
 
   $sending_message  = "Hey Jason, You have a message from <" . $name . " | " . $email_from . ">\n\n";
-  $sending_message .= "<quote>" . $message . "</quote>";
+  $sending_message .= "Message: \n";
+  $sending_message .= $message;
 
   // create email headers
   $headers = 'From: '.$email_from."\r\n".
