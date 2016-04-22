@@ -27,20 +27,18 @@
 
 <?php
   $email_to = "contact@vuonghia.com";
-  $message_subject = "WHAT'S UP";
+  $message_subject = $_POST['contact-subject'];
   $name = $_POST['contact-name'];
   $email_from = $_POST['contact-email'];
   $message = $_POST['contact-words'];
 
+  // display error message
   function died($error) {
-    echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-    echo "These errors appear below.<br /><br />";
-    echo $error."<br /><br />";
-    echo "Please go back and fix these errors.<br /><br />";
+    echo $error."<br/>";
+    echo "Please go back and fix these errors.<br/>";
     die();
   }
 
-//  echo $name."\n".$email_from."\n".$message.".\n";
   // validation expected data exists
   if(!isset($_POST['contact-name'])  ||
      !isset($_POST['contact-email']) ||
@@ -48,9 +46,8 @@
        died('We are sorry, but there appears to be a problem with the form you submitted.');
   }
 
-  $sending_message  = "Hey Jason, You have a message from your website's dropbox.\n";
-  $sending_message .= "The message was sent by " . $name . "<" . $email_from . ">\n\n";
-  $sending_message .= $message . "\n";
+  $sending_message  = "Hey Jason, You have a message from <" . $name . " | " . $email_from . ">\n\n";
+  $sending_message .= "<quote>" . $message . "</quote>";
 
   // create email headers
   $headers = 'From: '.$email_from."\r\n".
