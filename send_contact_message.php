@@ -93,7 +93,7 @@
     <div class="row" id="primary">
       <div id="content" class="col-sm-12">
           <section class="main-content">
-            <p class="lead">Thanks for contacting me, We will be in touch with you very soon.</p>
+            <p class="lead">Thanks for contacting me. I will be in touch with you very soon.</p>
           </section> <!-- main-content -->
       </div> <!-- content -->
     </div> <!-- row -->
