@@ -92,7 +92,7 @@
   <div class="container">
     <div class="row" id="primary">
       <div id="content" class="col-sm-12">
-          <section class="main-content" action="send_contact_message.php" method="post">
+          <section class="main-content">
             <p class="lead">Thanks for contacting me, We will be in touch with you very soon.</p>
           </section> <!-- main-content -->
       </div> <!-- content -->
