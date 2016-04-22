@@ -58,6 +58,13 @@ p.lead {
 	text-align: center;
 }
 
+p.lead2 {
+	font-weight: normal;
+	font-size: 30px;
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+
 a:hover {
 	text-decoration: none;
 	color: #c9302c;
@@ -271,6 +278,10 @@ section h3 {
 .feature-image {
 	display: table;
 	width: 100%;
+}
+
+.feature-image-expand-top-bottom {
+	height: 350px;
 }
 
 .feature-image-default {

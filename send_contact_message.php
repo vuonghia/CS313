@@ -84,7 +84,7 @@
   </header> <!-- END HEADER -->
 
   <!--FEATURE IMAGE -->
-  <section class="feature-image feature-image-default" data-type="background" data-speed="2">
+  <section class="feature-image feature-image-default feature-image-expand-top-bottom" data-type="background" data-speed="2">
     <h1 class="page-title">Contact</h1>
   </section> <!-- END FEATURE IMAGE -->
 
@@ -93,7 +93,7 @@
     <div class="row" id="primary">
       <div id="content" class="col-sm-12">
           <section class="main-content">
-            <p class="lead">Thanks for contacting me. I will be in touch with you very soon.</p>
+            <p class="lead2">Thanks for contacting me. I will be in touch with you very soon.</p>
           </section> <!-- main-content -->
       </div> <!-- content -->
     </div> <!-- row -->
@@ -101,7 +101,7 @@
    <!-- END MAIN CONTENT -->
 
   <!-- SIGNUP SECTION -->
-  <section id="signup" data-type="background" data-speed="4">
+  <section id="signup" class="feature-image-expand-top-bottom" data-type="background" data-speed="4">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-offset-3">
