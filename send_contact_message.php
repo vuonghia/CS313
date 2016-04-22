@@ -25,6 +25,38 @@
    <![endif]-->
 </head>
 
+<?php
+  $email_to = "contact@vuonghia.com";
+  $name = $_POST['contact-name'];
+  $email_from = $_POST['contact-email'];
+  $message = $_POST['contact-words'];
+
+  function died($error) {
+    echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+    echo "These errors appear below.<br /><br />";
+    echo $error."<br /><br />";
+    echo "Please go back and fix these errors.<br /><br />";
+    die();
+  }
+
+  // validation expected data exists
+  if(!isset($_POST['first_name']) || !isset($_POST['last_name']) ||
+     !isset($_POST['email'])      || !isset($_POST['telephone']) ||
+     !isset($_POST['comments'])) {
+       died('We are sorry, but there appears to be a problem with the form you submitted.');
+  }
+
+  $sending_message  = "Hey Jason, You have a message from your website's dropbox.\n";
+  $sending_message .= "The message was sent by " . $name . "<" . $email_from . ">\n\n";
+  $sending_message .= $message . "\n";
+
+  // create email headers
+  $headers = 'From: '.$email_from."\r\n".
+  'Reply-To: '.$email_from."\r\n" .
+  'X-Mailer: PHP/' . phpversion();
+  @mail($email_to, $sending_message, $headers);
+?>
+
 <body class="full-width contact">
   <!-- HEADER -->
   <header class="site-header" role="banner">
@@ -61,30 +93,7 @@
     <div class="row" id="primary">
       <div id="content" class="col-sm-12">
           <section class="main-content" action="send_contact_message.php" method="post">
-            <p class="lead">Have any questions about me? Feel free to get in touch with me! I&rsquo;ll do my best to get back to you ASAP.</p>
-            <form role="form" class="clearfix">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="contact-name" class="sr-only">Name</label>
-                    <input type="text" class="form-control input-lg" id="contact-name" placeholder="Your name">
-                  </div> <!-- form-group -->
-                </div> <!-- col -->
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="contact-email" class="sr-only">Email</label>
-                    <input type="email" class="form-control input-lg" id="contact-email" placeholder="Your email">
-                  </div> <!-- form-group -->
-                </div> <!-- col -->
-                <div class="col-sm-12">
-                  <div class="form-group">
-                    <label for="contact-words" class="sr-only">Message</label>
-                    <textarea class="form-control input-lg" id="contact-words" placeholder="Your message" rows="3"></textarea>
-                  </div> <!-- form-group -->
-                </div> <!-- col -->
-              </div> <!-- row -->
-              <input type="submit" class="btn btn-info btn-lg pull-right" value="Get in touch &raquo;">
-            </form>
+            <p class="lead">Thanks for contacting me, We will be in touch with you very soon.</p>
           </section> <!-- main-content -->
       </div> <!-- content -->
     </div> <!-- row -->
