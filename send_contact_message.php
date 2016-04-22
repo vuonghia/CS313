@@ -40,9 +40,9 @@
   }
 
   // validation expected data exists
-  if(!isset($_POST['first_name']) || !isset($_POST['last_name']) ||
-     !isset($_POST['email'])      || !isset($_POST['telephone']) ||
-     !isset($_POST['comments'])) {
+  if(!isset($_POST['contact-name'])  ||
+     !isset($_POST['contact-email']) ||
+     !isset($_POST['contact-words'])) {
        died('We are sorry, but there appears to be a problem with the form you submitted.');
   }
 
