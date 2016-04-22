@@ -27,6 +27,7 @@
 
 <?php
   $email_to = "contact@vuonghia.com";
+  $message_subject = "WHAT'S UP";
   $name = $_POST['contact-name'];
   $email_from = $_POST['contact-email'];
   $message = $_POST['contact-words'];
@@ -39,6 +40,7 @@
     die();
   }
 
+//  echo $name."\n".$email_from."\n".$message.".\n";
   // validation expected data exists
   if(!isset($_POST['contact-name'])  ||
      !isset($_POST['contact-email']) ||
@@ -54,7 +56,7 @@
   $headers = 'From: '.$email_from."\r\n".
   'Reply-To: '.$email_from."\r\n" .
   'X-Mailer: PHP/' . phpversion();
-  @mail($email_to, $sending_message, $headers);
+  @mail($email_to, $message_subject, $sending_message, $headers);
 ?>
 
 <body class="full-width contact">
