@@ -334,6 +334,8 @@ section h3 {
 #course-features .row.skills .col-sm-2 div {
 	height: 90px;
 	width: 90px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 #course-features #html5-color {

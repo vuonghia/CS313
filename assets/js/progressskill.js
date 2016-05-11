@@ -1,9 +1,14 @@
-window.onload = function onLoad() {
-
-//  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-    loadTheProgressBar();
-//  }
-};
+$(document).on('scroll', function() {
+//    $(window).scroll(function() {
+      var oTop = $('#cpp').offset().top - window.innerHeight + 90;
+      var pTop = $('body').scrollTop();
+      // console.log(pTop + " > " + oTop);
+      if(pTop > oTop)
+      {
+        $(document).off('scroll');
+        loadTheProgressBar();
+      }
+});
 
 function loadTheProgressBar () {
   var html5 = new ProgressBar.Circle('#html5', {
@@ -26,7 +31,7 @@ function loadTheProgressBar () {
       }
     }
   });
-  html5.animate(1.0);  // Number from 0.0 to 1.0
+  html5.animate(1.0);
 
   var css3 = new ProgressBar.Circle('#css3', {
     color: '#056CB6',
