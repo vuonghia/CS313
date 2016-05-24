@@ -2,7 +2,7 @@ $(document).on('scroll', function() {
 //    $(window).scroll(function() {
       var oTop = $('#cpp').offset().top - window.innerHeight + 90;
       var pTop = $('body').scrollTop();
-      // console.log(pTop + " > " + oTop);
+//      console.log(pTop + " > " + oTop);
       if(pTop > oTop)
       {
         $(document).off('scroll');
@@ -31,7 +31,7 @@ function loadTheProgressBar () {
       }
     }
   });
-  html5.animate(1.0);
+  html5.animate(0.9);
 
   var css3 = new ProgressBar.Circle('#css3', {
     color: '#056CB6',
@@ -53,7 +53,7 @@ function loadTheProgressBar () {
       }
     }
   });
-  css3.animate(0.7);  // Number from 0.0 to 1.0
+  css3.animate(0.8);  // Number from 0.0 to 1.0
 
   var javascript = new ProgressBar.Circle('#javascript', {
     color: '#F3D239',
@@ -119,7 +119,7 @@ function loadTheProgressBar () {
       }
     }
   });
-  java.animate(0.9);  // Number from 0.0 to 1.0
+  java.animate(0.8);  // Number from 0.0 to 1.0
 
   var cpp = new ProgressBar.Circle('#cpp', {
     color: '#51A900',
