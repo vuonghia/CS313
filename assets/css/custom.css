@@ -484,6 +484,16 @@ section h3 {
 	background: #D32F2E;
 }
 
+#experience #myCarousel .carousel-caption p{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+#experience #myCarousel p {
+	text-align: left;
+}
+
 #project-features {
 	text-align: center;
 }
@@ -869,6 +879,9 @@ button[type="submit"]:hover {
 	#experience .carousel-caption-logo {
 		display: none;
 	}
+	#experience #myCarousel .carousel-caption h2 {
+		display: none;
+	}
 }
 
 /*iPhone 5 and Smartphone 5''*/
@@ -893,6 +906,11 @@ button[type="submit"]:hover {
 	}
 
 	#experience .carousel-caption-logo {
+		display: none;
+	}
+
+	#experience #myCarousel .carousel-caption p,
+	#experience #myCarousel .carousel-caption h2 {
 		display: none;
 	}
 }
