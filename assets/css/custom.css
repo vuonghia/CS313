@@ -99,6 +99,82 @@ button.btn-success:focus {
 	border-color: #6a9b3d;
 }
 
+.btn-black {
+	background: #222222;
+	border: none;
+}
+
+.btn-black:hover {
+	background: #080808;
+	border-color: #080808;
+}
+
+.hero-text a {
+	text-decoration: none;
+  color: white;
+  width: 200px;
+  height: 100px;
+  background: #2F2F2F;
+  position: relative;
+  margin: 10px;
+  top: 10px;
+  padding: 10px 18px 10px 18px;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 0px 0px #2A2A2A, 0px 0px 20px 0px #bbb;
+  transition: all 0.2s;
+}
+
+.hero-text a:link, .hero-text a:visited {
+	text-decoration: none;
+  color: #FFF;
+}
+
+.hero-text a:hover {
+	text-decoration: none;
+  color: #aaa;
+}
+
+.hero-text a:active {
+	text-decoration: none;
+  color: #aaa;
+  top: 18px;
+  box-shadow: 0px 7px 0px 0px #2A2A2A;
+}
+
+#signup a {
+	text-decoration: none;
+	font-weight: bold;
+  color: #dd5638;
+  width: 100%;
+  background: #79b044;
+  position: relative;
+  margin: 10px;
+  top: 10px;
+  padding: 10px;
+  font-size: 36px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 0px 0px #6a9b3d, 0px 0px 20px 0px #bbb;
+  transition: all 0.2s;
+}
+
+#signup a:link, .signup a:visited {
+	text-decoration: none;
+  color: #dd5638;
+}
+
+#signup a:hover {
+	text-decoration: none;
+  color: #dd5638;
+}
+
+#signup a:active {
+	text-decoration: none;
+  color: #dd5638;
+  top: 18px;
+  box-shadow: 0px 7px 0px 0px #79b044;
+}
+
 img {
 	max-width: 100%;
 }
@@ -108,7 +184,7 @@ img {
 }
 
 .badge.social {
-	background: #ccc;
+	background: #717070;
 	font-size: 24px;
 	height: 40px;
 	width: 40px;
@@ -767,6 +843,9 @@ button[type="submit"]:hover {
 		height:60px;
 		width: 60px;
 	}
+	#experience .carousel-caption-logo {
+		display: none;
+	}
 }
 
 /*iPad and Tablets*/
@@ -787,6 +866,9 @@ button[type="submit"]:hover {
 		margin-right: 2%;
 		min-height: 800px;
 	}
+	#experience .carousel-caption-logo {
+		display: none;
+	}
 }
 
 /*iPhone 5 and Smartphone 5''*/
@@ -804,14 +886,13 @@ button[type="submit"]:hover {
 		display: none;
 	}
 
-	#experience .carousel-caption-logo{
-		display: none;
-	}
-
 	.resource {
 		width: 100%;
 		margin-right: 0;
 		min-height: 0;
 	}
 
+	#experience .carousel-caption-logo {
+		display: none;
+	}
 }
