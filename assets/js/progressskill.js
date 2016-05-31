@@ -17,7 +17,7 @@ function loadTheProgressBar () {
     trailWidth: 1,
     duration: 1700,
     easing: 'bounce',
-    strokeWidth: 15,
+    strokeWidth: 8,
     from: {color: '#FFEA82', a:0},
     to: {color: '#F16529', a:1},
     // Set default step function for all animate calls
@@ -27,7 +27,8 @@ function loadTheProgressBar () {
       if (value === 0) {
         circle.setText('');
       } else {
-        circle.setText(value + '%');
+//        circle.setText(value + '%');
+        circle.setText('Expert');
       }
     }
   });
@@ -39,7 +40,7 @@ function loadTheProgressBar () {
     trailWidth: 1,
     duration: 1700,
     easing: 'bounce',
-    strokeWidth: 15,
+    strokeWidth: 8,
     from: {color: '#FFEA82', a:0},
     to: {color: '#056CB6', a:1},
     // Set default step function for all animate calls
@@ -49,11 +50,12 @@ function loadTheProgressBar () {
       if (value === 0) {
         circle.setText('');
       } else {
-        circle.setText(value + '%');
+        // circle.setText(value + '%');
+        circle.setText('Proficient');
       }
     }
   });
-  css3.animate(0.8);  // Number from 0.0 to 1.0
+  css3.animate(0.85);  // Number from 0.0 to 1.0
 
   var javascript = new ProgressBar.Circle('#javascript', {
     color: '#F3D239',
@@ -61,7 +63,7 @@ function loadTheProgressBar () {
     trailWidth: 1,
     duration: 1700,
     easing: 'bounce',
-    strokeWidth: 15,
+    strokeWidth: 8,
     from: {color: '#FFEA82', a:0},
     to: {color: '#F3D239', a:1},
     // Set default step function for all animate calls
@@ -71,7 +73,8 @@ function loadTheProgressBar () {
       if (value === 0) {
         circle.setText('');
       } else {
-        circle.setText(value + '%');
+        // circle.setText(value + '%');
+        circle.setText('Proficient');
       }
     }
   });
@@ -83,7 +86,7 @@ function loadTheProgressBar () {
     trailWidth: 1,
     duration: 1700,
     easing: 'bounce',
-    strokeWidth: 15,
+    strokeWidth: 8,
     from: {color: '#FFEA82', a:0},
     to: {color: '#D32F2E', a:1},
     // Set default step function for all animate calls
@@ -93,21 +96,22 @@ function loadTheProgressBar () {
       if (value === 0) {
         circle.setText('');
       } else {
-        circle.setText(value + '%');
+        // circle.setText(value + '%');
+        circle.setText('Prior\nexp');
       }
     }
   });
-  angular.animate(0.7);  // Number from 0.0 to 1.0
+  angular.animate(0.65);  // Number from 0.0 to 1.0
 
   var java = new ProgressBar.Circle('#java', {
-    color: '#BF00FE',
+    color: '#FFFFFF',
     trailColor: '#3E4249',
     trailWidth: 1,
     duration: 1700,
     easing: 'bounce',
-    strokeWidth: 15,
-    from: {color: '#FFEA82', a:0},
-    to: {color: '##BF00FE', a:1},
+    strokeWidth: 8,
+    from: {color: '#3E4249', a:0},
+    to: {color: '#FFFFFF', a:1},
     // Set default step function for all animate calls
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
@@ -115,19 +119,66 @@ function loadTheProgressBar () {
       if (value === 0) {
         circle.setText('');
       } else {
-        circle.setText(value + '%');
+//        circle.setText(value + '%');
+        circle.setText('Proficient');
       }
     }
   });
   java.animate(0.8);  // Number from 0.0 to 1.0
 
   var cpp = new ProgressBar.Circle('#cpp', {
+    color: '#000000',
+    trailColor: '#3E4249',
+    trailWidth: 1,
+    duration: 1700,
+    easing: 'bounce',
+    strokeWidth: 8,
+    from: {color: '#3E4249', a:0},
+    to: {color: '#000000', a:1},
+    // Set default step function for all animate calls
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+      var value = Math.round(circle.value() * 100);
+      if (value === 0) {
+        circle.setText('');
+      } else {
+        // circle.setText(value + '%');
+        circle.setText('Proficient');
+      }
+    }
+  });
+  cpp.animate(0.8);  // Number from 0.0 to 1.0
+
+  var php = new ProgressBar.Circle('#php', {
+    color: '#BF00FE',
+    trailColor: '#3E4249',
+    trailWidth: 1,
+    duration: 1700,
+    easing: 'bounce',
+    strokeWidth: 8,
+    from: {color: '#056CB6', a:0},
+    to: {color: '#BF00FE', a:1},
+    // Set default step function for all animate calls
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+      var value = Math.round(circle.value() * 100);
+      if (value === 0) {
+        circle.setText('');
+      } else {
+//        circle.setText(value + '%');
+        php.setText('Prior\nexp');
+      }
+    }
+  });
+  php.animate(0.65);  // Number from 0.0 to 1.0
+
+  var mysql = new ProgressBar.Circle('#mysql', {
     color: '#51A900',
     trailColor: '#3E4249',
     trailWidth: 1,
     duration: 1700,
     easing: 'bounce',
-    strokeWidth: 15,
+    strokeWidth: 8,
     from: {color: '#FFEA82', a:0},
     to: {color: '#51A900', a:1},
     // Set default step function for all animate calls
@@ -137,9 +188,11 @@ function loadTheProgressBar () {
       if (value === 0) {
         circle.setText('');
       } else {
-        circle.setText(value + '%');
+        // circle.setText(value + '%');
+        circle.setText('Prior\nexp');
       }
     }
   });
-  cpp.animate(0.8);  // Number from 0.0 to 1.0
+  mysql.animate(0.65);  // Number from 0.0 to 1.0
+
 }

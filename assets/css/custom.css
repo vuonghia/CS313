@@ -431,12 +431,22 @@ section h3 {
 }
 
 #course-features #java-color {
-	color: #BF00FE;
+	color: #FFFFFF;
 }
 
 #course-features #cpp-color {
+	color: #000000;
+}
+
+#course-features #php-color {
+	color: #BF00FE;
+}
+
+#course-features #mysql-color {
 	color: #51A900;
 }
+
+
 
 /*#course-features .skill {
 	height: 75px;
