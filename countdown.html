@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel=icon href="./assets/img/favicon.ico">
+
+  <!-- TITLE -->
+  <title>Home | Jason Vuong</title>
+  <!-- BOOTSTRAP CORE CSS -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link href="./assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="./assets/css/custom.css" rel="stylesheet">
+  <!-- Google Fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+<script>
+function counter() {
+  var setDate = new Date("June 11, 2016 00:00:00");
+  var currentDate = new Date();
+  var days = (setDate - currentDate) / (1000 * 60 * 60 * 24);
+  var hours = (days - Math.floor(days)) * 24;
+  var minutes = (hours - Math.floor(hours)) * 60;
+  var seconds = (minutes - Math.floor(minutes)) * 60;
+
+  document.getElementById("DayLeft").innerHTML = Math.floor(days);
+  document.getElementById("HourLeft").innerHTML = Math.floor(hours);
+  document.getElementById("MinLeft").innerHTML = Math.floor(minutes);
+  document.getElementById("SecLeft").innerHTML = Math.floor(seconds);
+}
+
+setInterval('counter()', 1000);
+</script>
+</head>
+
+<body>
+      <span id="DayLeft"></span> Days
+      <span id="HourLeft"></span> Hours
+      <span id="MinLeft"></span> Minutes
+      <span id="SecLeft"></span> Seconds
+
+  <!-- BOOTSTRAP CORE JAVASCRIPT -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./assets/js/jquery-2.1.4.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
