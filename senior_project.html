@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
 </head>
+
+
 
 <body id="fontOpenSans">
     <style>
@@ -53,13 +54,19 @@
         .jcenter80 {
             margin-left: auto;
             margin-right: auto;
-            width: 90%;
+            padding-right: 40px;
+            width: 100%;
         }
         .jmainbox {
             box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7) inset, 0 -1px 1px rgba(0, 0, 0, 0.3) inset, 0 1px 3px 0px rgba(0, 0, 0, 0.5) inset, 0 15px 30px -13px rgba(0, 0, 0, 0.5);
             margin-left: auto;
             margin-right: auto;
             width: 80%;
+         }
+         .sexy_text {
+           /*font-weight: bold;*/
+         	-webkit-font-smoothing: antialiased;
+         	text-rendering: optimizelegibility;
          }
     </style>
     <br/>
@@ -101,16 +108,31 @@
                                 <ol class="carousel-indicators">
                                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                    <li data-target="#myCarousel" data-slide-to="4"></li>
                                 </ol>
 
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
-                                        <img src="./assets/img/senior_project/senior_project1.jpg" alt="Chania">
+                                        <img src="./assets/img/senior_project/srprj_demo_1.jpg" alt="Chania">
                                     </div>
 
                                     <div class="item">
-                                        <img src="./assets/img/senior_project/senior_project1.jpg" alt="Chania">
+                                        <img src="./assets/img/senior_project/srprj_demo_2.jpg" alt="Chania">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="./assets/img/senior_project/srprj_demo_3.jpg" alt="Chania">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="./assets/img/senior_project/srprj_demo_4.jpg" alt="Chania">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="./assets/img/senior_project/srprj_demo_5.jpg" alt="Chania">
                                     </div>
                                 </div>
 
@@ -128,7 +150,7 @@
                         <div class="col-md-6">
                             <h3>Overview:</h3>
                             <div class="jcenter80">
-                                <p style="text-align:justify">
+                                <p class="sexy_text" style="text-align:justify;font-size:20px">
                                   Making robots and automated car was something that I have being dreamed since I was a child. To make the dream comes true and fulfil the requirements for my senior project, I challenged myself with something I have not done before: building a remote-controlled (RC) car. I started off with learning how the car runs electronically and how to control the car wirelessly. Then later, I tended to add more features on it: obstacles avoidance, car-cam, and heat detection. The process of learning something new was challenging but fun. I finished the project with the car worked and could detect and avoid obstacles. However, I want to add more features on it and hope these features would be added in version 2.0 or 3.0.
                                 </p>
                             </div>
@@ -138,9 +160,12 @@
 
                 <div id="sectionB" class="tab-pane fade">
                     <div class=row>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8">
-                            <div class="jcenter80">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                          <iframe style="padding-top:25px" width="100%" height="315" src="https://www.youtube.com/embed/tYhXAU1qDF8" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="jcenter80 sexy_text">
                                 <h3>Features:</h3>
                                 <ul>
                                     <li>User can remotely control with PS4 controller (Dualshock4).</li>
@@ -152,10 +177,9 @@
                                     <li>User can experience the view-on-car with the LED screen on the controller.</li>
                                     <li>User can detect heat (human heat or any kind of heat sources).</li>
                                 </ul>
-
                             </div>
                         </div>
-                        <div class="col-md-2"></div>
+                        <div class="col-md-1"></div>
                     </div>
                 </div>
             </div>
