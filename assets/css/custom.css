@@ -204,6 +204,9 @@ img {
 .badge.social.facebook:hover {
 	background:#3b5998;
 }
+.badge.social.github:hover {
+	background:#222222;
+}
 .badge.social.gplus:hover {
 	background:#db4b39;
 }
@@ -479,6 +482,11 @@ section h3 {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+}
+
+#experience .expATGWORK {
+	background: #FF9C3A;
+	background-repeat: repeat-x;
 }
 
 #experience .expFS {
